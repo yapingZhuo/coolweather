@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="23" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     
 
@@ -24,6 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.coolweather.app.activity.WeatherActivity" >
+        </activity>
+        <service android:name="com.coolweather.app.service.AutoUpdateService"></service>
+        <receiver android:name="com.coolweathew.app.receiver.AutoUpdateReceiver"></receiver>
     </application>
 
 </manifest>
